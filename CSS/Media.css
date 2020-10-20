@@ -1,0 +1,163 @@
+/* Mobile */
+@media screen and (max-width: 736px) {
+    
+    body{
+    max-width: 100% !important;
+    }   
+    /* Intro */
+   
+    .myText {
+        font-size: 5rem;
+        top: 30%;
+    }
+    .myText.intro-text {
+        font-size: 10rem;
+        left: 50%;
+        top: 40%;
+    }
+    #myIntro {
+        width: 100vw;
+    }
+    .preload {
+        width: 100vw;
+    }
+    #myButton {
+        white-space: nowrap;
+        font-size: 1.3rem;
+        top: 60%;
+    }
+
+    /* Poem */
+    .poet {
+        max-width: 100vw;
+        left: -28%;
+    }
+    #poemBtn {
+        font-size: 1.8rem;
+        top: 50%;
+        
+        text-align: center;
+    }
+    .poem {
+        font-size: .77rem;
+        line-height: 1.6rem;
+    }
+    
+    .title {
+        font-size: 6.2rem;
+        text-shadow: .2rem .2rem rgb(128, 128, 128, .5);
+       
+    }
+    .text-poem {
+        top: -18rem;
+        left: -1rem;
+    }
+    .wrapper {
+        margin: 0;
+        width: 375px;
+        height: 900px;
+        left: 0;
+        top: -6rem;
+    }
+    .wrap{
+        width: 80%;
+        height: 50%;
+    }
+    .page-two {
+        height: 80vh;
+    }
+    .poem-two {
+        height: 90vh;
+    }
+    .p-text-one {
+        position: absolute;
+        top: 10rem;
+    }
+    .swiper-container {
+        height: 50vh;
+    }
+
+    /* Slides */
+    .swiper-slide.swiper-slide-active {
+        width: 100vw !important;
+        margin-right: 0 !important;
+    }
+    element.style {
+        width: 100vw;
+    }
+    .embed-container {
+        top: 5rem;
+     
+    }
+    .swiper-button-prev{
+        visibility: hidden;
+    }
+    .swiper-button-next {
+        visibility: hidden;
+    }
+    .swiper-text {
+        font-size: 3.5rem;
+        top: 185%;
+        left: 1rem;
+    }
+    .two-two {
+        font-size: 3.5rem;
+        top: 253%;
+        left: 1rem;
+    }
+
+    .embed-wrapper iframe {
+        top: -50%;
+        transform: translateY(50%);
+      }
+
+      .embed-wrapper {
+          width: 100vw;
+          height: 7rem;
+          top: -20%;
+          overflow: hidden;
+      }
+   
+    /* Playlist */
+    .playlist {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .play {
+        
+        width: 50vw;
+        height: auto;
+        left: 50%;
+        top: -10%;
+        transform: translate(-50%, 10%);
+    }
+    .songs {
+        margin-bottom: 10rem;
+    }
+    .play-sub {
+        padding-top: 10%;
+    }
+    .play-title {
+        font-size: 1.5rem;
+    }
+    .play-sub.sub {
+        padding-top: 1%;
+    }
+
+    /* Pictures namin */
+    .pic-wrapper {
+        width: 100vw;
+    }
+    .top {
+        width: 100vw;
+    }
+
+
+    /* Last Part */
+    #one {
+        font-size: 5rem;
+    }
+    #two {
+        font-size: 10rem;
+    }
+}

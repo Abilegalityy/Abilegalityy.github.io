@@ -1,0 +1,463 @@
+@font-face {
+  font-family: Moon-time;
+  src: url(/fonts/MoonTime-Regular.ttf);
+}
+
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(/fonts/LeagueSpartan-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Glacial-indifference;
+  src: url(/fonts/GlacialIndifference-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Noto-serif;
+  src: url(/fonts/NotoSerifDisplay-ExtraCondensedLight.ttf);
+}
+@font-face {
+  font-family: "Lineto";
+  src: url(/fonts/lineto-circular-bold.ttf);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Intro */
+
+#myIntro {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 98;
+}
+
+.animate {
+  height: 0px;
+  transition: opacity 1s ease-in;
+}
+
+#myIntro.fade {
+  opacity: 0;
+}
+
+.myText {
+  position: absolute;
+  opacity: 1;
+  top: 30vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 7em;
+  z-index: 99;
+  color: white;
+  font-family: "Moon-time";
+  color: #fff136;
+  font-weight: 500;
+  text-transform: lowercase;
+  left: 43%;
+  text-shadow: 0.15rem 0.15rem 0.1rem rgba(255, 255, 27, 0.5);
+}
+
+.intro-text {
+  font-size: 15rem;
+  top: 45%;
+  left: 50%;
+  text-transform: capitalize;
+}
+
+#myButton {
+  position: absolute;
+  opacity: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  padding: 1em 1em;
+  color: rgb(255, 255, 255);
+  z-index: 99;
+  text-decoration: underline;
+  top: 80%;
+  font-family: "Glacial-indifference";
+  font-size: 1.9rem;
+}
+
+.preload {
+  animation: transitionIn 2s;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* fade-in1 */
+.first {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.first.appears {
+  opacity: 1;
+}
+
+/* fade-in2 */
+.second {
+  opacity: 0;
+  transition: opacity 4s ease-in;
+}
+
+.second.appearsz {
+  opacity: 1;
+}
+
+/* Poem */
+.poem {
+  background-color: rgb(0, 0, 0);
+}
+
+.poet {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.pcover {
+  position: relative;
+}
+
+#poemBtn {
+  position: absolute;
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
+  left: 75%;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  color: white;
+  text-decoration: underline;
+  z-index: 97;
+  font-size: 2rem;
+}
+
+#poemBtn.fade {
+  opacity: 0;
+}
+
+#poem-one {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 2s ease-in;
+  z-index: 96;
+  top: 40%;
+  left: 20%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#poem-one.appear {
+  opacity: 1;
+}
+
+.title {
+  font-family: "Moon-time";
+  text-shadow: 0.4rem 0.4rem rgb(255, 255, 255, 0.5);
+  font-size: 10rem;
+}
+
+.page-two.fade-in.appear {
+  left: 2%;
+  top: 10%;
+}
+
+/* Poem Container */
+.poem {
+  font-family: "Abhaya Libre", serif;
+  line-height: 1.6;
+  position: relative;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+.wrapper {
+  background-color: rgb(250, 245, 166, 0.1);
+  width: 67.6%;
+  left: -8%;
+  top: -15%;
+  transform: translate(8%, 15%);
+  padding-bottom: 50%;
+  position: absolute;
+}
+
+.wrapper-two {
+  position: relative;
+  left: 2rem;
+}
+/* Page 1 poem */
+.text-poem {
+  position: absolute;
+  top: -16rem;
+  left: -10rem;
+}
+
+/* Page 2 poem */
+.poem-two {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrap {
+  background-color: rgb(250, 245, 166, 0.1);
+  padding: 0;
+  width: 65%;
+  height: 75%;
+  position: absolute;
+}
+
+.page-two {
+  position: relative;
+  height: 100vh;
+  color: white;
+  top: 1%;
+  left: 5.5%;
+}
+
+.first {
+  margin: 0px;
+}
+
+.center {
+  text-align: left;
+}
+
+/* Sliders */
+.swiper-container {
+  height: 85vh;
+
+  margin-bottom: 8rem;
+  margin-top: 10%;
+}
+
+.swiper-slide {
+  background: pink;
+  width: auto;
+}
+
+.swiper-slide {
+  bottom: 3rem;
+}
+.swiper-text {
+  color: white;
+  font-family: "LeagueSpartan";
+  position: absolute;
+  text-shadow: .1rem .1rem #ffbbbb;
+  font-size: 5rem;
+}
+.two-two {
+  top: 310%;
+}
+
+
+
+/* Playlist */
+.playlist {
+  font-family: "LeagueSpartan";
+  font-size: 5rem;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+}
+.list {
+  position: relative;
+}
+.play {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 27vw;
+  height: auto;
+  left: 50%;
+  top: -10%;
+  transform: translate(-50%, 10%);
+}
+.songs {
+  font-family: "Lineto";
+  color: white;
+  text-align: center;
+}
+
+.play.play-by {
+  font-weight: 100;
+}
+.play-sub {
+  padding-top: 7%;
+}
+.play-sub.sub {
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+/* Pictures namin */
+.top {
+  visibility: hidden;
+  display: block;
+  margin: 3% auto;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@keyframes animat_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade In */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/* Video */
+.video {
+  overflow: hidden;
+}
+
+
+
+.video {
+  padding-top: 20%;
+  
+}
+
+#vid-appear {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+#vid-appear.appear {
+  opacity: 1;
+}
+
+#vid-click {
+  font-family: "Glacial-indifference";
+  font-size: 1.9rem;
+  text-align: center;
+  text-decoration: underline;
+  opacity: 1;
+  color: white;
+  position: absolute;
+  transition: opacity 0.5s ease-in;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.vid {
+  position: relative;
+}
+
+/* Last page */
+
+.Hbd {
+  width: 100%;
+  position: relative;
+  font-size: 10rem;
+  display: flex;
+  flex-grow: inherit;
+}
+
+#bg {
+  height: 100vh;
+}
+
+.greet {
+  position: absolute;
+}
+
+.greet.first {
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.greet.second {
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#one {
+  color: white;
+  font-family: "Noto-serif";
+  font-size: 10rem;
+  text-shadow: 0.3rem 0.3rem rgb(128, 128, 128, 0.5);
+}
+
+#two {
+  font-family: "Moon-time";
+  color: #fff136;
+  font-size: 15rem;
+  text-shadow: 0.3rem 0.3rem rgb(255, 241, 54, 0.51);
+}
+
+body {
+  background-color: black;
+}
